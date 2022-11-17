@@ -2,14 +2,14 @@
 
 <h1>Home</h1>
 
-<p> <%= startingContent.substring(0, 100) + "..." %></p>
+<p> <%= startingContent %></p>
 
 
 <% posts.forEach((post) =>{ %>
     <h1> <%= post.title %></h1>
     <p>
         <%= post.content.substring(0, 100) + "..." %>
-        <a href="/posts/<%=post.title%>">Read More</a>
+        <a href="/posts/<%=post._id%>">Read More</a>
     </p>
 <% }); %>
     
